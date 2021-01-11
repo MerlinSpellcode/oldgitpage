@@ -39,10 +39,69 @@
             </thead>
             <tbody>
               <!-- ###
-            SKill cleave
+            Parry
             #### -->
               <tr>
                 <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/lQdLODU.png"
+                    class="img-fluid"
+                    alt="parry"
+                  />
+                </td>
+                <td class="fw-bold">Stance</td>
+                <td class="fw-bold">Parry</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">2s</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">0.1s</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-warning"
+                            >20 Stamina</span
+                          >
+                          (<span class="text-primary">-1 per level</span>) per
+                          physical hit received.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Take a defensive stance, using your own weapon to
+                          block hits. While in this stance, he cannot move or
+                          attack. Using abilities that do damage removes you
+                          from the stance.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <!-- ###
+            SKill cleave
+            #### -->
+              <tr>
+                <th scope="row">3</th>
                 <td>
                   <img
                     src="https://i.imgur.com/09xNoiy.png"
@@ -79,7 +138,7 @@
                         <td>Cost</td>
                         <td>
                           <span class="badge rounded-pill bg-warning"
-                            >20 Energy</span
+                            >20 Stamina</span
                           >
                         </td>
                       </tr>
@@ -137,7 +196,7 @@
                         <td>Cost</td>
                         <td>
                           <span class="badge rounded-pill bg-warning"
-                            >5 Energy</span
+                            >5 Stamina</span
                           >
                           per Attack
                         </td>
@@ -207,13 +266,432 @@
                           Take a deep breath to catch your breath and
                           concentrate. Regen
                           <span class="badge rounded-pill bg-warning"
-                            >100 Energy</span
+                            >100 Stamina</span
                           >
                           and
                           <span class="badge rounded-pill bg-success"
                             >20% Max Health</span
                           >
                           Instantly.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <!-- ###
+            Thurst
+            #### -->
+              <tr>
+                <th scope="row">10</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/DDiF68x.png"
+                    class="img-fluid"
+                    alt="thurst"
+                  />
+                </td>
+                <td class="fw-bold">Attack</td>
+                <td class="fw-bold">Thurst</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">12s</span>
+                          (<span class="text-primary">-1 per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="text-primary">Instantly</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-warning"
+                            >5 Stamina</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Quickly moves 3 cells forward, dealing
+                          <span class="badge rounded-pill bg-danger">60%</span>
+                          Weapon Type Damage to enemies.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <!-- ###
+            OverHealm
+            #### -->
+              <tr>
+                <th scope="row">13</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/z9A65Cs.png"
+                    class="img-fluid"
+                    alt="thurst"
+                  />
+                </td>
+                <td class="fw-bold">Attack</td>
+                <td class="fw-bold">Overhealm</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">15s</span>
+                          (<span class="text-primary">-0.5 per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="text-primary">Instantly</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-warning"
+                            >10 Stamina</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Strikes the target with the weapon handle, dealing
+                          <span class="badge rounded-pill bg-danger">30%</span>
+                          (<span class="text-primary">+2% per level</span>)
+                          Weapon Type Damage and stunning for
+                          <span class="badge rounded-pill bg-info">1s</span>
+                          (<span class="text-primary">+0.1s per level</span>).
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <!-- ###
+            Action Surge
+            #### -->
+              <tr>
+                <th scope="row">15</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/Qng5oKd.png"
+                    class="img-fluid"
+                    alt="thurst"
+                  />
+                </td>
+                <td class="fw-bold">Buff</td>
+                <td class="fw-bold">Action Surge</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">30s</span>
+                          (<span class="text-primary">-1s per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="text-primary">Instantly</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary"
+                            >100 Mana</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Concentrates and holds your breath for a moment to
+                          perform 3 consecutive strokes, dealing
+                          <span class="badge rounded-pill bg-danger">50%</span>
+                          (<span class="text-primary">+5% per level</span>)
+                          Weapon Type Damage with each strike.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <!-- ###
+            Critical Frenesi
+            #### -->
+              <tr>
+                <th scope="row">20</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/zm6qApO.png"
+                    class="img-fluid"
+                    alt="thurst"
+                  />
+                </td>
+                <td class="fw-bold">Passive</td>
+                <td class="fw-bold">Critical Frenesi</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Gain
+                          <span class="badge rounded-pill bg-danger">1%</span>
+                          (<span class="text-primary">+1% per level</span>)
+                          Crritical Chance. Whenever critical strike, recover
+                          <span class="badge rounded-pill bg-success">10%</span>
+                          of the damage dealt as HP and
+                          <span class="badge rounded-pill bg-warning"
+                            >5 Stamina</span
+                          >.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <!-- ###
+            Athletic
+            #### -->
+              <tr>
+                <th scope="row">25</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/8N0oDPu.png"
+                    class="img-fluid"
+                    alt="thurst"
+                  />
+                </td>
+                <td class="fw-bold">Passive</td>
+                <td class="fw-bold">Athletic</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          When entering combat, gain
+                          <span class="badge rounded-pill bg-info"
+                            >20 Movement Speed</span
+                          >
+                          (<span class="text-primary">+1 per level</span>)
+                          movement speed while equal to or above
+                          <span class="badge rounded-pill bg-warning"
+                            >100 stamina</span
+                          >
+                          (<span class="text-primary">-5 per level</span>).
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <!-- ###
+            Heavy Attack
+            #### -->
+              <tr>
+                <th scope="row">27</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/QZVpd3t.png"
+                    class="img-fluid"
+                    alt="thurst"
+                  />
+                </td>
+                <td class="fw-bold">Passive</td>
+                <td class="fw-bold">Heavy Attack</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Your weapon is very heavy, your blows very strong.
+                          When hit enemy combat, the enemy receives
+                          <span class="badge rounded-pill bg-info"
+                            >5% slow</span
+                          >
+                          (<span class="text-primary">+0.5% per level</span>)
+                          for each hit received. Accumulating up to 5 charges.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <!-- ###
+            Whirlwind
+            #### -->
+              <tr>
+                <th scope="row">30</th></th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/Zmj4S5o.png"
+                    class="img-fluid"
+                    alt="Whirlwind"
+                  />
+                </td>
+                <td class="fw-bold">Stance</td>
+                <td class="fw-bold">Whirlwind</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">30s</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">0.5s</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-warning"
+                            >30 Stamina</span
+                          >
+                          (<span class="text-primary">-1 per level</span>) per
+                          second.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Spin with your weapon, hitting all enemies around.
+                          dealing 3 hits of
+                          <span class="badge rounded-pill bg-danger">20%</span>
+                          (<span class="text-primary">+0.5% per level</span>) of
+                          Weapon Type Damage per second to all enemies.
+                          Activates weapon effects.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <!-- ###
+            Executte
+            #### -->
+              <tr>
+                <th scope="row">40</th></th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/CKhRwDr.png"
+                    class="img-fluid"
+                    alt="Executte"
+                  />
+                </td>
+                <td class="fw-bold">Attack</td>
+                <td class="fw-bold">Executte</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">25s</span> (<span class="text-primary">-1 per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="text-primary">Instantly</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-warning"
+                            >50 Stamina</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Executes your already wounded enemy. Dealing
+                          <span class="badge rounded-pill bg-danger">300%</span>
+                          (<span class="text-primary">+30% per level</span>) on enemies below 20% health. On enemies above that it does <span class="badge rounded-pill bg-danger">half</span> the damage.
+                          If the enemy is killed, recover <span class="badge rounded-pill bg-warning">25 Stamina</span>.
                         </td>
                       </tr>
                     </tbody>
