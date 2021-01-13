@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .icon {
+        width: 64px;
+      }
+    </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <title>Priest Skills</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row m-5">
+        <h1>Priest Skills</h1>
+        <div class="card card-body shadow" style="width: 18rem">
+          <h5 class="card-title">Skills</h5>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col" style="width: 10px">Lvl</th>
+                <th scope="col" style="width: 64px">Icon</th>
+                <th scope="col" style="width: 64px">Type</th>
+                <th scope="col" style="width: 80px">Name</th>
+                <th scope="col" style="width: 76px">lvl-Max</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- ###
+            Sacred Flame
+            #### -->
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/Fvq69nM.png"
+                    class="img-fluid"
+                    alt="sacred flame"
+                  />
+                </td>
+                <td class="fw-bold">Attack</td>
+                <td class="fw-bold">Sacred Flame</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">5s</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary"
+                            >Instantly</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary"
+                            >20 Mana</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Sacred flames appear in the targeted cell, burning
+                          enemies dealing
+                          <span class="badge rounded-pill bg-danger">120%</span>
+                          (<span class="text-primary">+2% per level</span>) of
+                          their magic attack as Holy Damage. If an ally in your
+                          party is in the cell, it will have the effect of curse
+                          and fear removed.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- ###
+            Heal
+            #### -->
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/xDslf1w.png"
+                    class="img-fluid"
+                    alt="Heal"
+                  />
+                </td>
+                <td class="fw-bold">Support</td>
+                <td class="fw-bold">Heal</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">15s</span>
+                          (<span class="text-primary">-1 per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary">0.3</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary"
+                            >100 Mana</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Sacred illumination appears in 2x2 cells from the
+                          tagerted point. Healing party allies in
+                          <span class="badge rounded-pill bg-success">50%</span>
+                          (<span class="text-primary">+5% per level</span>). If
+                          any undead are in the area, Heal will deal damage.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- ###
+            BLESS
+            #### -->
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/AKJM13L.png"
+                    class="img-fluid"
+                    alt="Bless"
+                  />
+                </td>
+                <td class="fw-bold">Buff</td>
+                <td class="fw-bold">Bless</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">20s</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary">0.5</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary"
+                            >60 Mana</span
+                          >(<span class="text-primary">+10 per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          All group members get
+                          <span class="badge rounded-pill bg-info">1</span>
+                          (<span class="text-primary">+1 per level</span>) STR,
+                          CON, DEX, INT, WIS, LUK for
+                          <span class="badge rounded-pill bg-info">1m</span>
+                          (<span class="text-primary">+1 per level</span>).
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- ###
+            Aureum Bell
+            #### -->
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/UcYPR7X.png"
+                    class="img-fluid"
+                    alt="Aureum Bell"
+                  />
+                </td>
+                <td class="fw-bold">Support</td>
+                <td class="fw-bold">Aureum Bell</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">20s</span
+                          >(<span class="text-primary">-1s per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary"
+                            >Instantly</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary"
+                            >100 Mana</span
+                          >(<span class="text-primary">-10 per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Transform the target into an invulnerable being made
+                          of gold for
+                          <span class="badge rounded-pill bg-info">2s</span>.
+                          While in this form, the target is invulnerable and
+                          unable to move, use items, attack or cast abilities.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- ###
+            Ressurrection
+            #### -->
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/l6MsU4P.png"
+                    class="img-fluid"
+                    alt="Ressurrection"
+                  />
+                </td>
+                <td class="fw-bold">Support</td>
+                <td class="fw-bold">Ressurrection</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">5m</span
+                          >(<span class="text-primary">-20s per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary">10s</span
+                          >(<span class="text-primary">-0.5s per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary"
+                            >200 Mana</span
+                          >(<span class="text-primary">+10 per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Ressurrect dead ally. The ally return with 1 HP and 1
+                          MP.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- ###
+            Sacred Lux
+            #### -->
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/1wuU85r.png"
+                    class="img-fluid"
+                    alt="Sacred Lux"
+                  />
+                </td>
+                <td class="fw-bold">Attack</td>
+                <td class="fw-bold">Sacred Lux</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">25m</span
+                          >(<span class="text-primary">-1s per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary">0.5</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary"
+                            >120 Mana</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Em uma área 3x3 selecionada, surge um clarão de luz
+                          que causa
+                          <span class="badge rounded-pill bg-danger">120%</span
+                          >(<span class="text-primary">+5% per level</span>) do
+                          seu dano mágico em forma de dano Sagrado e causa
+                          status
+                          <span class="badge rounded-pill bg-info"
+                            >Silence</span
+                          >
+                          e
+                          <span class="badge rounded-pill bg-info">Blind</span>
+                          nos inimigos dentro da área.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- ###
+            Sanctuary
+            #### -->
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/jUy0gyh.png"
+                    class="img-fluid"
+                    alt="Sanctuary"
+                  />
+                </td>
+                <td class="fw-bold">Support/Attack</td>
+                <td class="fw-bold">Sanctuary</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">60s</span
+                          >(<span class="text-primary">-1s per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary">3s</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary"
+                            >500 Mana</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Em uma área 4x4 selecionada, um circulo de magia
+                          sagrada é conjurado, que pulsa a cada
+                          <span class="badge rounded-pill bg-info">2s</span
+                          >.<br />
+                          Inimigos dentro da área sofrem por pulso
+                          <span class="badge rounded-pill bg-danger">80%</span
+                          >(<span class="text-primary">+2% per level</span>) do
+                          seu dano mágico em forma de dano Sagrado.<br />
+                          Aliados dentro da área curam por pulso
+                          <span class="badge rounded-pill bg-success">50%</span
+                          >(<span class="text-primary">+1% per level</span
+                          >).<br />
+                          Pulsa 6 vezes.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
