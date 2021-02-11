@@ -22,8 +22,435 @@
   </head>
   <body>
     <div class="container">
+      <h1>Priest Skills</h1>
+
+      <!-- Death Domain -->
       <div class="row m-5">
-        <h1>Priest Skills</h1>
+        <h1>Death Domain</h1>
+        <div class="card card-body shadow" style="width: 18rem">
+          <h5 class="card-title">Skills</h5>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col" style="width: 10px">Lvl</th>
+                <th scope="col" style="width: 64px">Icon</th>
+                <th scope="col" style="width: 64px">Type</th>
+                <th scope="col" style="width: 80px">Name</th>
+                <th scope="col" style="width: 76px">lvl-Max</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Sacrifice -->
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/crcrdyp.png"
+                    class="img-fluid"
+                    alt="Sacrifice"
+                  />
+                </td>
+                <td class="fw-bold">Support</td>
+                <td class="fw-bold">Sacrifice</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">15s</span
+                          >(<span class="text-primary">-1 per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary"
+                            >0.3s</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger"
+                            >-10% life</span
+                          ><span class="badge rounded-pill bg-dark"
+                            >+10 death</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Safrica parte da vida, regenerando em mana
+                          <span class="badge rounded-pill bg-primary">100%</span
+                          >(<span class="text-primary">+10% per level</span>) do
+                          total de vida sacrificada.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- Agony -->
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/crcrdyp.png"
+                    class="img-fluid"
+                    alt="Agony"
+                  />
+                </td>
+                <td class="fw-bold">Attack</td>
+                <td class="fw-bold">Agony</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">8s</span
+                          >(<span class="text-primary">-0.5s per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary"
+                            >Instantly</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          Need
+                          <span class="badge rounded-pill bg-dark"
+                            >20 death</span
+                          >
+                          or more, cost
+                          <span class="badge rounded-pill bg-primary"
+                            >60 Mana</span
+                          >
+                          per second, gain
+                          <span class="badge rounded-pill bg-dark"
+                            >+10 death</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Nevoas do submundo emergem em uma celula a sua
+                          escolha, inimigos nessa celula seu pegos por uma
+                          doença e agonizando de dor. Causa
+                          <span class="badge rounded-pill bg-danger"
+                            >10 + 10%</span
+                          >
+                          do seu dano mágico em dano necrótico por segundo,
+                          durando
+                          <span class="badge rounded-pill bg-info">8s</span>.
+                          Inimigo afetado por Agony recebe
+                          <span class="badge rounded-pill bg-dark"
+                            >Insanity</span
+                          >, cada vez que o mesmo alvo for afetado por Agony,
+                          uma carga de
+                          <span class="badge rounded-pill bg-dark"
+                            >Insanity</span
+                          >
+                          é aumentada, aumentando
+                          <span class="badge rounded-pill bg-info">4s</span> da
+                          duranção de agony. Acumula até um máximo de
+                          <span class="badge rounded-pill bg-secondary">3</span>
+                          vezes.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- Lifesteal -->
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/crcrdyp.png"
+                    class="img-fluid"
+                    alt="Lifesteal"
+                  />
+                </td>
+                <td class="fw-bold">Attack</td>
+                <td class="fw-bold">Lifesteal</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">20s</span
+                          >(<span class="text-primary">-1 per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          Channeling
+                          <span class="badge rounded-pill bg-primary">5s</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          Need
+                          <span class="badge rounded-pill bg-dark"
+                            >50 death</span
+                          >
+                          or more, cost
+                          <span class="badge rounded-pill bg-primary"
+                            >100 Mana</span
+                          >
+                          per second, gain
+                          <span class="badge rounded-pill bg-dark"
+                            >+10 death</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Cria um sifão de essencia da vida no alvo inimigo mais
+                          próximo, sugando sua vida enquanto estiver em
+                          channeling. Causa por segundo
+                          <span class="badge rounded-pill bg-danger">30%</span
+                          >(<span class="text-primary">+2% per level</span>) do
+                          seu dano mágico como dano necrótico, curando
+                          <span class="badge rounded-pill bg-success">50%</span
+                          >(<span class="text-primary">+3% per level</span>) do
+                          dano causado.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- Underworld Gate -->
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/crcrdyp.png"
+                    class="img-fluid"
+                    alt="Underworld Gate"
+                  />
+                </td>
+                <td class="fw-bold">Attack</td>
+                <td class="fw-bold">Underworld Gate</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">240s</span
+                          >(<span class="text-primary">-12s per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary">1s</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          Need
+                          <span class="badge rounded-pill bg-dark"
+                            >100 death</span
+                          >, cost
+                          <span class="badge rounded-pill bg-primary"
+                            >80% Maxium Mana</span
+                          >, gain
+                          <span class="badge rounded-pill bg-dark"
+                            >+10 death</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Priest se torna o próprio portão para o submundo,
+                          saindo névoa e almas para uma área de até 4 celulas de
+                          distancia ao redor de si. Inimigos que estiverem
+                          dentro da área são julgados pelas almas ceifadoras, e
+                          poderão morrer instantaneamente. Inimigos com menos
+                          que
+                          <span class="badge rounded-pill bg-primary">20%</span
+                          >(<span class="text-primary">+1% per level</span>) de
+                          vida máxima tem
+                          <span class="badge rounded-pill bg-info">20%</span
+                          >(<span class="text-primary">+3% per level</span>) de
+                          chance de ser ceifado. Se o alvo estiver com
+                          <span class="badge rounded-pill bg-dark">Fear</span> a
+                          chance aumenta para
+                          <span class="badge rounded-pill bg-info">60%</span
+                          >(<span class="text-primary">+3% per level</span>). Se
+                          o Inimigo for Ceifado, ele não pode ser ressucitado
+                          por magia.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- Mind Supression -->
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/crcrdyp.png"
+                    class="img-fluid"
+                    alt="Mind Supression"
+                  />
+                </td>
+                <td class="fw-bold">Passive</td>
+                <td class="fw-bold">Mind Supression</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          Consume
+                          <span class="badge rounded-pill bg-info">3</span>
+                          stacks of Agony.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Quando o alvo já tiver 3 cargas de Agony e for pego
+                          afetado pela skill uma quarta vez, as 3 cargas
+                          anteriores são estouradas, causando o dano total que
+                          causariam ao longo do tempo de uma única vez, causando
+                          <span class="badge rounded-pill bg-danger">50%</span
+                          >(<span class="text-primary">+5% per level</span>) de
+                          dano mágico como dano necrótico e status
+                          <span class="badge rounded-pill bg-dark">Fear</span>
+                          durante
+                          <span class="badge rounded-pill bg-info">1s</span
+                          >(<span class="text-primary">-0.15s per level</span>).
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- Death Cry -->
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/crcrdyp.png"
+                    class="img-fluid"
+                    alt="Death Cry"
+                  />
+                </td>
+                <td class="fw-bold">Passive</td>
+                <td class="fw-bold">Death Cry</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">380s</span
+                          >(<span class="text-primary">-10s per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary"
+                            >10% Mana</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Um grito de morte é disparado quando sua life máxima
+                          for reduzida abaixo de 20%, todos os inimigos a 3
+                          celular de distancia recebem
+                          <span class="badge rounded-pill bg-dark">Fear</span>
+                          durante
+                          <span class="badge rounded-pill bg-info">1s</span
+                          >(<span class="text-primary">-0.3s per level</span>).
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Life Domain -->
+      <div class="row m-5">
+        <h1>Life Domain</h1>
+
         <div class="card card-body shadow" style="width: 18rem">
           <h5 class="card-title">Skills</h5>
           <table class="table table-hover">
@@ -41,11 +468,11 @@
               <!-- ###
             Sacred Flame
             #### -->
-              <tr>
+              <!-- <tr>
                 <th scope="row">1</th>
                 <td>
                   <img
-                    src="https://i.imgur.com/Fvq69nM.png"
+                    src="https://i.imgur.com/HPDuMjq.png"
                     class="img-fluid"
                     alt="sacred flame"
                   />
@@ -99,7 +526,7 @@
                     </tbody>
                   </table>
                 </td>
-              </tr>
+              </tr> -->
 
               <!-- ###
             Heal
@@ -108,7 +535,7 @@
                 <th scope="row">1</th>
                 <td>
                   <img
-                    src="https://i.imgur.com/xDslf1w.png"
+                    src="https://i.imgur.com/HPDuMjq.png"
                     class="img-fluid"
                     alt="Heal"
                   />
@@ -135,7 +562,7 @@
                       <tr>
                         <td>Casting</td>
                         <td>
-                          <span class="badge rounded-pill bg-primary">0.3</span>
+                          <span class="badge rounded-pill bg-primary">0.2</span>
                         </td>
                       </tr>
                       <tr>
@@ -143,6 +570,9 @@
                         <td>
                           <span class="badge rounded-pill bg-primary"
                             >100 Mana</span
+                          >, Gain
+                          <span class="badge rounded-pill bg-warning"
+                            >+10 Life</span
                           >
                         </td>
                       </tr>
@@ -168,7 +598,7 @@
                 <th scope="row">1</th>
                 <td>
                   <img
-                    src="https://i.imgur.com/AKJM13L.png"
+                    src="https://i.imgur.com/HPDuMjq.png"
                     class="img-fluid"
                     alt="Bless"
                   />
@@ -200,9 +630,18 @@
                       <tr>
                         <td>Cost</td>
                         <td>
+                          Need
+                          <span class="badge rounded-pill bg-warning"
+                            >20 life</span
+                          >
+                          or more, cost
                           <span class="badge rounded-pill bg-primary"
                             >60 Mana</span
-                          >(<span class="text-primary">+10 per level</span>)
+                          >(<span class="text-primary">+10 per level</span>),
+                          gain
+                          <span class="badge rounded-pill bg-warning"
+                            >+10 life</span
+                          >
                         </td>
                       </tr>
                       <tr>
@@ -228,7 +667,7 @@
                 <th scope="row">1</th>
                 <td>
                   <img
-                    src="https://i.imgur.com/UcYPR7X.png"
+                    src="https://i.imgur.com/HPDuMjq.png"
                     class="img-fluid"
                     alt="Aureum Bell"
                   />
@@ -263,9 +702,18 @@
                       <tr>
                         <td>Cost</td>
                         <td>
+                          Need
+                          <span class="badge rounded-pill bg-warning"
+                            >50 life</span
+                          >
+                          or more, cost
                           <span class="badge rounded-pill bg-primary"
                             >100 Mana</span
-                          >(<span class="text-primary">-10 per level</span>)
+                          >(<span class="text-primary">+10 per level</span>),
+                          gain
+                          <span class="badge rounded-pill bg-warning"
+                            >+10 life</span
+                          >
                         </td>
                       </tr>
                       <tr>
@@ -290,7 +738,7 @@
                 <th scope="row">1</th>
                 <td>
                   <img
-                    src="https://i.imgur.com/l6MsU4P.png"
+                    src="https://i.imgur.com/HPDuMjq.png"
                     class="img-fluid"
                     alt="Ressurrection"
                   />
@@ -324,16 +772,25 @@
                       <tr>
                         <td>Cost</td>
                         <td>
+                          Need
+                          <span class="badge rounded-pill bg-warning"
+                            >100 life</span
+                          >
+                          or more, cost
                           <span class="badge rounded-pill bg-primary"
                             >200 Mana</span
-                          >(<span class="text-primary">+10 per level</span>)
+                          >(<span class="text-primary">+10 per level</span>),
+                          gain
+                          <span class="badge rounded-pill bg-warning"
+                            >+10 life</span
+                          >
                         </td>
                       </tr>
                       <tr>
                         <td>Effect</td>
                         <td>
-                          Ressurrect dead ally. The ally return with 1 HP and 1
-                          MP.
+                          Ressurrect dead ally. The ally return with 10% HP and
+                          10% MP.
                         </td>
                       </tr>
                     </tbody>
@@ -344,11 +801,11 @@
               <!-- ###
             Sacred Lux
             #### -->
-              <tr>
+              <!-- <tr>
                 <th scope="row">1</th>
                 <td>
                   <img
-                    src="https://i.imgur.com/1wuU85r.png"
+                    src="https://i.imgur.com/HPDuMjq.png"
                     class="img-fluid"
                     alt="Sacred Lux"
                   />
@@ -406,22 +863,127 @@
                     </tbody>
                   </table>
                 </td>
-              </tr>
+              </tr> -->
 
               <!-- ###
-            Sanctuary
+            Miraculous Aura
             #### -->
               <tr>
                 <th scope="row">1</th>
                 <td>
                   <img
-                    src="https://i.imgur.com/jUy0gyh.png"
+                    src="https://i.imgur.com/HPDuMjq.png"
                     class="img-fluid"
-                    alt="Sanctuary"
+                    alt="Miraculous Aura"
+                  />
+                </td>
+                <td class="fw-bold">Passive</td>
+                <td class="fw-bold">Miraculous Aura</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Aliados fora de combate em até 4 celulas de distancia
+                          regeneram
+                          <span class="badge rounded-pill bg-success"
+                            >2% Life</span
+                          >(<span class="text-primary">+0.7% per level</span>) a
+                          cada 2 segundos.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- ###
+            Mana Restoration
+            #### -->
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/HPDuMjq.png"
+                    class="img-fluid"
+                    alt="Mana Restoration"
+                  />
+                </td>
+                <td class="fw-bold">Passive</td>
+                <td class="fw-bold">Mana Restoration</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          A cada 3 Heals conjurados, o quarto heal será de cor
+                          azulada dará buff de mana regen em uma área 4x4 de
+                          onde foi conjurado.
+                          <span class="badge rounded-pill bg-primary"
+                            >50+150%</span
+                          >(<span class="text-primary">+10% per level</span>) do
+                          nível de Magia Sagrada em mana regen ao longo de 10
+                          segundos.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <!-- Hybrid Domain -->
+      <div class="row m-5">
+        <h1>Hybrid Domain</h1>
+
+        <div class="card card-body shadow" style="width: 18rem">
+          <h5 class="card-title">Skills</h5>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col" style="width: 10px">Lvl</th>
+                <th scope="col" style="width: 64px">Icon</th>
+                <th scope="col" style="width: 64px">Type</th>
+                <th scope="col" style="width: 80px">Name</th>
+                <th scope="col" style="width: 76px">lvl-Max</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- ###
+            Holy/Unholy Ground
+            #### -->
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/HPDuMjq.png"
+                    class="img-fluid"
+                    alt="Holy/Unholy Ground"
                   />
                 </td>
                 <td class="fw-bold">Support/Attack</td>
-                <td class="fw-bold">Sanctuary</td>
+                <td class="fw-bold">Holy/Unholy Ground</td>
                 <td>10</td>
                 <td>
                   <table class="table table-bordered">

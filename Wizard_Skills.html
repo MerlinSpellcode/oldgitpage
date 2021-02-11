@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .icon {
+        width: 64px;
+      }
+    </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <title>Wizard Skills</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Wizard Skills</h1>
+
+      <!-- Evocation Circle -->
+      <div class="row m-5">
+        <h1>Evocation Circle</h1>
+
+        <div class="card card-body shadow" style="width: 18rem">
+          <h5 class="card-title">Skills</h5>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col" style="width: 10px">Lvl</th>
+                <th scope="col" style="width: 64px">Icon</th>
+                <th scope="col" style="width: 64px">Type</th>
+                <th scope="col" style="width: 80px">Name</th>
+                <th scope="col" style="width: 76px">lvl-Max</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- ###
+            Flame Hands
+            #### -->
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/l5g2LZ5.png"
+                    class="img-fluid"
+                    alt="Flame Hands"
+                  />
+                </td>
+                <td class="fw-bold">Attack</td>
+                <td class="fw-bold">Flame Hands</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">**s</span
+                          >(<span class="text-primary">-**s per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary">**s</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary"
+                            >** Mana</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Cria um cone de fogo a sua frente, causando dano a todos inimigos
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- ###
+            Fireball
+            #### -->
+            <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/l5g2LZ5.png"
+                    class="img-fluid"
+                    alt="Fireball"
+                  />
+                </td>
+                <td class="fw-bold">Attack</td>
+                <td class="fw-bold">Fireball</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">**s</span
+                          >(<span class="text-primary">-**s per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary">**s</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary"
+                            >** Mana</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Seleciona uma área 5x5, uma bola de fogo surgira daquele local acertando todos os inimigos e causando dano flamejante
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+            <!-- ###
+            Ice Spear
+            #### -->
+            <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/BB7jnqi.png"
+                    class="img-fluid"
+                    alt="Ice Spear"
+                  />
+                </td>
+                <td class="fw-bold">Attack</td>
+                <td class="fw-bold">Ice Spear</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">**s</span
+                          >(<span class="text-primary">-**s per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary">**s</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary"
+                            >** Mana</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Conjura uma Stalagnite de gelo, que voa até 9 celulas na direção apontada. Alvo acertado pela Lança de Gelo recebe dano congelante e ficam com Slow, e tem chance de serem congelados. Se o inimigo já estiver com Slow, ele é congelado.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+            <!-- ###
+            Cone of Cold
+            #### -->
+            <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/BB7jnqi.png"
+                    class="img-fluid"
+                    alt="Cone of Cold"
+                  />
+                </td>
+                <td class="fw-bold">Attack</td>
+                <td class="fw-bold">Cone of Cold</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">**s</span
+                          >(<span class="text-primary">-**s per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary">**s</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary"
+                            >** Mana</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Conjura um cone de gelo a sua frente, causando Slow e dano congelante nos alvos inimigos que estiverem dentro da área de efeito. Se o inimigo já estiver com Slow, ele é congelado.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+            <!-- ###
+            Thunderbolt
+            #### -->
+            <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/ejJCqp0.png"
+                    class="img-fluid"
+                    alt="Thunderbolt"
+                  />
+                </td>
+                <td class="fw-bold">Attack</td>
+                <td class="fw-bold">Thunderbolt</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">**s</span
+                          >(<span class="text-primary">-**s per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary">**s</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary"
+                            >** Mana</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Conjura um Trovão na celula Selecionada, causando Dano Elétrico e Atordoando inimigos na celula.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+            <!-- ###
+            Earth Strike
+            #### -->
+            <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/iivoCtt.png"
+                    class="img-fluid"
+                    alt="Earth Strike"
+                  />
+                </td>
+                <td class="fw-bold">Attack</td>
+                <td class="fw-bold">Earth Strike</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">**s</span
+                          >(<span class="text-primary">-**s per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary">**s</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary"
+                            >** Mana</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Um bloco de terra emerge a sua frente, causando dano concussivo, empurrando e atordoando o alvo inimigo que estiver na área a frente.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+            <!-- ###
+            Quicksand
+            #### -->
+            <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/iivoCtt.png"
+                    class="img-fluid"
+                    alt="Quicksand"
+                  />
+                </td>
+                <td class="fw-bold">Attack</td>
+                <td class="fw-bold">Quicksand</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">**s</span
+                          >(<span class="text-primary">-**s per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary">**s</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary"
+                            >** Mana</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Na celula selecionada, um campo de 4x4 se torna areia movediça, causando Slow e puxando os inimigos dentro da área para o centro dela. 
+                            <br>
+                            Requer
+                          <span class="badge rounded-pill bg-info"
+                            >Concentração</span
+                          >
+                          para manter ativa.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+            <!-- ###
+            Magic Missile
+            #### -->
+            <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/5vzX9n1.png"
+                    class="img-fluid"
+                    alt="Magic Missile"
+                  />
+                </td>
+                <td class="fw-bold">Attack</td>
+                <td class="fw-bold">Magic Missile</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">**s</span
+                          >(<span class="text-primary">-**s per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary">**s</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary"
+                            >** Mana</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                            Dispara Misseis Mágicos na direção apontada, que percorrem até 10 celulas e causam Force Damage nos inimigos que acertarem.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <!-- Abjuration Circle -->
+      <div class="row m-5">
+        <h1>Abjuration Circle</h1>
+
+        <div class="card card-body shadow" style="width: 18rem">
+          <h5 class="card-title">Skills</h5>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col" style="width: 10px">Lvl</th>
+                <th scope="col" style="width: 64px">Icon</th>
+                <th scope="col" style="width: 64px">Type</th>
+                <th scope="col" style="width: 80px">Name</th>
+                <th scope="col" style="width: 76px">lvl-Max</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- ###
+            Mana Shield
+            #### -->
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/l5g2LZ5.png"
+                    class="img-fluid"
+                    alt="Mana Shield"
+                  />
+                </td>
+                <td class="fw-bold">Defense</td>
+                <td class="fw-bold">Mana Shield</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">**s</span
+                          >(<span class="text-primary">-**s per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary">**s</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary"
+                            >** Mana</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Cria um escudo que usa parte da mana como vida temporaria.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- ###
+            Antimagic Circle
+            #### -->
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/l5g2LZ5.png"
+                    class="img-fluid"
+                    alt="Antimagic Circle"
+                  />
+                </td>
+                <td class="fw-bold">Defense</td>
+                <td class="fw-bold">Antimagic Circle</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">**s</span
+                          >(<span class="text-primary">-**s per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary">**s</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary"
+                            >** Mana</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Cria uma área 3x3 que todos dentro fica imune a magias, inclusive aliadas.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <!-- Conjuration Circle -->
+      <div class="row m-5">
+        <h1>Conjuration Circle</h1>
+
+        <div class="card card-body shadow" style="width: 18rem">
+          <h5 class="card-title">Skills</h5>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col" style="width: 10px">Lvl</th>
+                <th scope="col" style="width: 64px">Icon</th>
+                <th scope="col" style="width: 64px">Type</th>
+                <th scope="col" style="width: 80px">Name</th>
+                <th scope="col" style="width: 76px">lvl-Max</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- ###
+            Myst Step
+            #### -->
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/l5g2LZ5.png"
+                    class="img-fluid"
+                    alt="Myst Step"
+                  />
+                </td>
+                <td class="fw-bold">Support</td>
+                <td class="fw-bold">Myst Step</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">**s</span
+                          >(<span class="text-primary">-**s per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary">**s</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary"
+                            >** Mana</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Se transporta instantamenta a uma celula até 7 de distancia.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- ###
+            Teleportantion Circle
+            #### -->
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  <img
+                    src="https://i.imgur.com/l5g2LZ5.png"
+                    class="img-fluid"
+                    alt="Teleportantion Circle"
+                  />
+                </td>
+                <td class="fw-bold">Support</td>
+                <td class="fw-bold">Teleportantion Circle</td>
+                <td>10</td>
+                <td>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cooldown</td>
+                        <td>
+                          <span class="badge rounded-pill bg-danger">**s</span
+                          >(<span class="text-primary">-**s per level</span>)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Casting</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary">**s</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Cost</td>
+                        <td>
+                          <span class="badge rounded-pill bg-primary"
+                            >** Mana</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td>
+                          Cria um circulo de teleport que leva qualquer um que pisar nele para cidade.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
