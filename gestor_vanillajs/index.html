@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+        
+
+    <title>Gestor de Consentimentos</title>
+
+    <style>
+        body {
+            background:#4682B4;  /* fallback for old browsers */       
+        }
+        .btn-info {
+            color: #fff;
+            background-color: #4682B4;
+            border-color: #4682B4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row mt-5">
+            <div class="d-flex justify-content-center">
+                <div class="mt-5">
+                    <div class="card shadow rounded-3" style="width: 25rem;">
+                        <div class="d-flex justify-content-center">
+                            <img src="login-logo.png" class="m-4" style="max-width: 13rem;">
+                        </div>
+                        
+                        <div class="m-3">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Gestor de Consentimentos</h5>
+                                <form>
+                                    <!-- PASSO 1 -->
+                                    <div id="step1" style="display: block">
+                                        <div class="mb-3">
+                                            <label for="fullname_step1" class="form-label">Nome Completo</label>
+                                            <input type="email" class="form-control" id="fullname_step1" aria-describedby="fullname_desc_step1">
+                                            <div id="fullname_desc_step1" class="form-text">Digite aqui seu nome completo</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="birthdate_step1" class="form-label">Data de Nascimento</label>
+                                            <input type="email" class="form-control" id="birthdate_step1" aria-describedby="birthdate_desc_step1" placeholder="__/__/____">
+                                            <div id="birthdate_desc_step1" class="form-text">Digite sua data de nascimento com dia/mes/ano</div>
+                                        </div>
+                                        <div class="col text-center">
+                                            <button type="button" id="btn_step1" class="btn btn-info text-white">Procurar cadastro</button>
+                                        </div>
+                                    </div>
+                                    <!-- PASSO 2 -->
+                                    <div id="step2" style="display: none">
+                                        <p class="text-center">Olá <span id="step2_p_name"></span>, confirme seu contato abaixo!</p>
+                                        <p class="text-center"><span id="step2_phone"></span></p>
+                                        <div class="mb-3">
+                                            <label for="contact_step2" class="form-label">Contato</label>
+                                            <input type="email" class="form-control" id="contact_step2" aria-describedby="contact_step2_desc">
+                                            <div id="contact_step2_desc" class="form-text">Digite aqui seu contato</div>
+                                        </div>
+                                        <div class="col text-center">
+                                            <button type="button" id="btn_step2" class="btn btn-info text-white">Procurar contato</button>
+                                        </div>
+                                    </div>
+                                    <!-- PASSO 3 -->
+                                    <div id="step3" style="display: none">
+                                        <p class="text-center">Em até 5 minutos um código será enviado para seu número via <b>SMS</b></p>
+                                        <div class="mb-3">
+                                            <label for="passcode_step3" class="form-label">Código</label>
+                                            <input type="email" class="form-control" id="passcode_step3" aria-describedby="passcode_step3_desc">
+                                            <div id="passcode_step3_desc" class="form-text">Digite aqui seu código</div>
+                                        </div>
+                                        <div class="col text-center">
+                                            <button type="button" id="btn_step3" class="btn btn-info text-white">Gerir Permissões</button>
+                                        </div>
+                                    </div>
+                                    <!-- PASSO 4 -->
+                                    <div id="step4" style="display:none">
+                                        <p class="text-center h5 mt-3"><b>Dados Armazenados</b></p>
+                                        <div class="card shadow mb-4">
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                    <b><span class="m-4" id="step4_dados_armazenados"></span></b>
+                                                </p>
+                                            </div>
+                                            
+                                        </div>
+                                        <p class="text-center h5 mt-3"><b>Termos de Uso</b></p>
+                                        <div class="overflow-auto bg-light mb-3" style="max-height: 200px;">
+                                            <div class="m-3">
+                                                <span id="step4_termos_de_uso"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-check mt-4 mb-3">
+                                            <input class="form-check-input" type="checkbox" value="" id="step4_check">
+                                            <label class="form-check-label" for="step4_check">
+                                                Aceito os termos de uso de meus dados
+                                            </label>
+                                        </div>
+                                        <div class="col text-center">
+                                            <button type="button" id="btn_step4" class="btn btn-info text-white">Atualizar Permissões</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- PASSO 5 -->
+                                    <div id="step5" style="display:none">
+                                        <p class="text-center h5 mt-5"><b>Seu consentimento foi alterado com sucesso!</b></p>
+                                        <p class="text-center h3 mt-3"><b>Obrigado</b></p>
+                                        <div class="col text-center mt-5">
+                                            <button type="button" id="btn_reload" class="btn btn-info text-white">Início</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="errorModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="errorModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="errorModalLabel">Erro</h5>
+                </div>
+                <div class="modal-body">
+                    <span id="error_message">erro: </span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="btn_reload" class="btn btn-primary">Recomeçar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Modal -->
+
+    <script>
+        !function(a,b){"function"==typeof define&&define.amd?define(b):a.UserInfo=b()}(this,function(){var a="https://api.userinfo.io/userinfos";return{getInfo:function(b,c){var d;d=window.XMLHttpRequest?new XMLHttpRequest:new ActiveXObject("Microsoft.XMLHTTP"),d.onreadystatechange=function(){if(4==d.readyState)if(200==d.status)b&&b(JSON.parse(d.responseText));else{var a;a=null!==d.responseText&&""!==d.responseText?JSON.parse(d.responseText):{message:"Error with HTTP status code: "+d.status},c&&c(a)}},d.open("GET",a,!0),d.setRequestHeader("X-Userinfo-Client-Id","userinfo-js:1.1.0"),d.send()}}});
+    </script>
+
+
+    <script>
+        UserInfo.getInfo(function(data) {
+            user_ip = data.ip_address;
+        }, function(err) {
+            user_ip = err;
+        });
+        var net_browser = "";
+        if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ) 
+        {
+            net_browser = "Opera"
+        }
+        else if(navigator.userAgent.indexOf("Chrome") != -1 )
+        {
+            net_browser = "Chrome"
+        }
+        else if(navigator.userAgent.indexOf("Safari") != -1)
+        {
+            net_browser = "Safari"
+        }
+        else if(navigator.userAgent.indexOf("Firefox") != -1 ) 
+        {
+            net_browser = "Firefox"
+        }
+        else if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) //IF IE > 10
+        {
+            net_browser = "Internet Explorer" 
+        }
+        else
+        {
+            net_browser = "Indefinido"
+        }
+        $(document).ready(function(){
+            $('#birthdate_step1').mask('99/99/9999');
+            $('#contact_step2').mask('(99) 9 9999-9999');
+            $("#btn_step1").click(function(){
+                var step1_fullname = document.getElementById("fullname_step1").value
+                var step1_birthdate = document.getElementById("birthdate_step1").value
+                $.get({
+                    method: 'GET',
+                    url: 'http://127.0.0.1:9000/findphone',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    // query parameters go under "data" as an Object
+                    data: {
+                        name: step1_fullname,
+                        birthdate: step1_birthdate
+                    }
+                }, function(result) {
+
+                    if( "error" in result["data"] ) {
+                        $('#error_message').text(result["data"]["error"]);
+                        $('#errorModal').modal('toggle');
+                        $('#errorModal').modal('show'); 
+                    }
+                    else {
+                        $('#step2_p_name').text(document.getElementById("fullname_step1").value);
+                        $('#step2_phone').text(result["data"]["phone_list"][0]);
+                        $("#step1").fadeOut(300);
+                        $("#step2").delay(300).fadeIn(301);
+                    }
+                });
+            });
+            $("#btn_step2").click(function(){
+                var step2_phone = document.getElementById("contact_step2").value
+                $.get({
+                    method: 'GET',
+                    url: 'http://127.0.0.1:9000/getpasscode',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    // query parameters go under "data" as an Object
+                    data: {
+                        phone: step2_phone,
+                    }
+                }, function(result) {
+                    console.log(result)
+                    if( "error" in result["data"] ) {
+                        $('#error_message').text(result["data"]["error"]);
+                        $('#errorModal').modal('toggle');
+                        $('#errorModal').modal('show'); 
+                    }
+                    else {
+                        $('#step3_p_name').text(document.getElementById("fullname_step1").value);
+                        $("#step1").fadeOut(300);
+                        $("#step2").fadeOut(300);
+                        $("#step3").delay(300).fadeIn(301);
+                    }
+                });
+            
+            });
+
+            $("#btn_step3").click(function(){
+                var step3_passcode = document.getElementById("passcode_step3").value
+                $.get({
+                    method: 'GET',
+                    url: 'http://127.0.0.1:9000/getpermission',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    // query parameters go under "data" as an Object
+                    data: {
+                        passcode: step3_passcode,
+                    }
+                }, function(result) {
+                    console.log(result["data"]["passcode"])
+                    if( "error" in result["data"] ) {
+                        $('#error_message').text(result["data"]["error"]);
+                        $('#errorModal').modal('toggle');
+                        $('#errorModal').modal('show'); 
+                    }
+                    else {
+                        document.getElementById('step4_termos_de_uso').insertAdjacentHTML('afterend', result["data"]["termos_de_uso"]);
+                        $('#step4_dados_armazenados').text(result["data"]["dados_armazenados"]);
+                        if (result["data"]["permission"] === true) {
+                            $('#step4_check').attr('checked', true);
+                        } else {
+                            $('#step4_check').attr('checked', false);
+                        }
+                        $("#step1").fadeOut(300);
+                        $("#step2").fadeOut(300);
+                        $("#step3").fadeOut(300);
+                        $("#step4").delay(300).fadeIn(301);
+                    }
+                });
+            
+            });
+
+            $("#btn_step4").click(function(){
+                var checked = false;
+                if ($("#step4_check").is(':checked')) {
+                    checked = true;
+                }
+                post_data = {
+                    name : document.getElementById("fullname_step1").value,
+                    birthdate : document.getElementById("birthdate_step1").value,
+                    phone : document.getElementById("contact_step2").value,
+                    passcode : document.getElementById("passcode_step3").value,
+                    permission : checked,
+                    browser : net_browser,
+                    ip : user_ip
+                };
+
+                console.log(post_data)
+                $.get({
+                        method: 'GET',
+                        url: 'http://127.0.0.1:9000/setconsent',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        // query parameters go under "data" as an Object
+                        data: post_data
+                    }, function(result) {
+                        console.log(result)
+                        if( "error" in result["data"] ) {
+                            $('#error_message').text(result["data"]["error"]);
+                            $('#errorModal').modal('toggle');
+                            $('#errorModal').modal('show'); 
+                        }
+                        else {
+                            $("#step1").fadeOut(300);
+                            $("#step2").fadeOut(300);
+                            $("#step3").fadeOut(300);
+                            $("#step4").fadeOut(300);
+                            $("#step5").delay(300).fadeIn(301);
+                        }
+                    });
+                
+;
+            });
+
+            $("#btn_reload").click(function(){
+                document.location.reload(true);
+            });
+
+
+          });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+
+
+        
+</body>
+
+</html>
