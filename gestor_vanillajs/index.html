@@ -194,7 +194,7 @@
                 var step1_birthdate = document.getElementById("birthdate_step1").value
                 $.get({
                     method: 'GET',
-                    url: 'http://127.0.0.1:9000/findphone',
+                    url: 'https://1wavhz.deta.dev/findphone',
                     headers: {
                         'Content-Type': 'application/json',
                     },
@@ -222,7 +222,7 @@
                 var step2_phone = document.getElementById("contact_step2").value
                 $.get({
                     method: 'GET',
-                    url: 'http://127.0.0.1:9000/getpasscode',
+                    url: 'https://1wavhz.deta.dev/getpasscode',
                     headers: {
                         'Content-Type': 'application/json',
                     },
@@ -251,7 +251,7 @@
                 var step3_passcode = document.getElementById("passcode_step3").value
                 $.get({
                     method: 'GET',
-                    url: 'http://127.0.0.1:9000/getpermission',
+                    url: 'https://1wavhz.deta.dev/getpermission',
                     headers: {
                         'Content-Type': 'application/json',
                     },
@@ -301,7 +301,7 @@
                 console.log(post_data)
                 $.get({
                         method: 'GET',
-                        url: 'http://127.0.0.1:9000/setconsent',
+                        url: 'https://1wavhz.deta.dev/setconsent',
                         headers: {
                             'Content-Type': 'application/json',
                         },
