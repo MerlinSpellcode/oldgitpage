@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .icon {
+        width: 64px;
+      }
+    </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script
+      src="slayer.js"
+    ></script>
+
+    <title>Warrior Skills</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row m-5">
+        <h1>Warrior Skills</h1>
+        <div class="card card-body shadow" style="width: 18rem">
+          <h5 class="card-title">Skills</h5>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col" style="width: 10px">Lvl</th>
+                <th scope="col" style="width: 64px">Icon</th>
+                <th scope="col" style="width: 64px">Type</th>
+                <th scope="col" style="width: 80px">Name</th>
+                <th scope="col" style="width: 76px">lvl-Max</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody id="skill_body">
+              <!-- ###
+            Parry
+            #### -->
+              
+              <!-- ###
+            Parry
+            #### -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script>
+      var element = document.getElementById("skill_body");
+      console.log(slayer_skills)
+
+      slayer_skills.forEach(function(skill, i) {
+        var testTR = `<tr><th scope="row">1</th><td><img src="${skill['icon']}"class="img-fluid"alt="${skill['name']}"/></td><td class="fw-bold">${skill['type']}</td><td class="fw-bold">${skill['name']}</td><td>${skill['lvl_max']}</td><td><table class="table table-bordered"><thead><tr><th scope="col">Name</th><th scope="col">Value</th></tr></thead><tbody><tr><td>Cooldown</td><td><span class="badge rounded-pill bg-danger">${skill['description']['cooldown']}</span></td></tr><tr><td>Casting</td><td><span class="badge rounded-pill bg-danger">${skill['description']['casting']}</span></td></tr><tr><td>Cost</td><td><span class="badge rounded-pill bg-warning">${skill['description']['cost']}</span></td></tr><tr><td>Effect</td><td>${skill['description']['effect']}</td></tr><tr><td>Anim</td><td><img src="${skill['description']['anim']}"/></td></tr></tbody></table></td></tr>`
+        element.insertAdjacentHTML( 'afterend', testTR )
+      })
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

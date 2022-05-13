@@ -1,6 +1,6 @@
 [
     {
-        "icon": "/icon/stab.png",
+        "icon": "stab.png",
         "type": "move",
         "name": "Perfurar",
         "lvl_max": "5",
