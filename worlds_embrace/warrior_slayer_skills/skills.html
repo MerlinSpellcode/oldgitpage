@@ -32,11 +32,9 @@
           <table class="table table-hover">
             <thead>
               <tr>
-                <th scope="col" style="width: 10px">Lvl</th>
-                <th scope="col" style="width: 64px">Icon</th>
+                <th scope="col" style="width: 100px">Icon</th>
                 <th scope="col" style="width: 64px">Type</th>
                 <th scope="col" style="width: 80px">Name</th>
-                <th scope="col" style="width: 76px">lvl-Max</th>
                 <th scope="col">Description</th>
               </tr>
             </thead>
@@ -58,7 +56,7 @@
       console.log(slayer_skills)
 
       slayer_skills.forEach(function(skill, i) {
-        var testTR = `<tr><th scope="row">1</th><td><img src="${skill['icon']}"class="img-fluid"alt="${skill['name']}"/></td><td class="fw-bold">${skill['type']}</td><td class="fw-bold">${skill['name']}</td><td>${skill['lvl_max']}</td><td><table class="table table-bordered"><thead><tr><th scope="col">Name</th><th scope="col">Value</th></tr></thead><tbody><tr><td>Cooldown</td><td><span class="badge rounded-pill bg-danger">${skill['description']['cooldown']}</span></td></tr><tr><td>Casting</td><td><span class="badge rounded-pill bg-danger">${skill['description']['casting']}</span></td></tr><tr><td>Cost</td><td><span class="badge rounded-pill bg-warning">${skill['description']['cost']}</span></td></tr><tr><td>Effect</td><td>${skill['description']['effect']}</td></tr><tr><td>Anim</td><td><img src="${skill['description']['anim']}"/></td></tr></tbody></table></td></tr>`
+        var testTR = `<tr><td><img src="${skill['icon']}"class="img-fluid"alt="${skill['name']}"style="min-width:30px;"/></td><td class="fw-bold">${skill['type']}</td><td class="fw-bold">${skill['name']}</td><td><table class="table table-bordered"><thead><tr><th scope="col">Name</th><th scope="col">Value</th></tr></thead><tbody><tr><td>Cooldown</td><td><span class="badge rounded-pill bg-danger">${skill['description']['cooldown']}</span></td></tr><tr><td>Casting</td><td><span class="badge rounded-pill bg-danger">${skill['description']['casting']}</span></td></tr><tr><td>Cost</td><td><span class="badge rounded-pill bg-warning">${skill['description']['cost']}</span></td></tr><tr><td>Effect</td><td>${skill['description']['effect']}</td></tr><tr><td>Anim</td><td><img src="${skill['description']['anim']}"/></td></tr></tbody></table></td></tr>`
         element.insertAdjacentHTML( 'afterend', testTR )
       })
     </script>
