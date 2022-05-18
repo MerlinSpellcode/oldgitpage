@@ -1,0 +1,31 @@
+2.	Qual framework de desenvolvimento seguro é utilizado para conduzir o programa?
+3.	
+4.	O provedor aplica alguma ação de reciclagem conscientizando sobre aspectos de segurança para os desenvolvedores? Se sim, através de que ações?
+4.	O provedor utiliza algum checklist de verificações de segurança durante todo o ciclo de projeto? Se sim, qual?
+5.	O provedor utiliza alguma solução para verificar vulnerabilidade em componentes de terceiros? Se sim, qual?
+6.	O provedor possui uma esteira de DevSecOps?
+7.	Quais são as soluções de segurança que estão embarcadas na esteira de desenvolvimento?
+8.	O provedor possui gestão de mudanças? Descrever os ritos utilizados no processo.
+9.	O provedor possui gestão de problemas? Descrever os ritos utilizados no processo.
+
+
+2. Wordpress
+4. Sempre que há reciclagem, a versão de todos os plugins, temas e bibliotecas são checadas para que não haja falhas.
+4. checklist
+    * Checar versões de plugins utilizados
+    * Checar versões de Temas utilizados
+    * Checar Issues existentes no tema e no plugin utilizado
+    * Login no painel apenas com autenticação de dois fatores
+    * Mudança na url do acesso do painel (evitar rasomware)
+5. Algumas, como:
+    * Sucuri SiteCheck scanner
+    * IsItWP Security Scanner
+    * Geekflare WordPress Security Scanner
+    * WPScan
+6. Não, pois trabalhamos com sites institucionais, não costuammos realizar o deploy e a hospedagem
+7
+8. Semanalmente, há uma checagem em versões dos plugins e tema utilizado. 
+    Caso tenha uma versão nova, verificamos o que foi atualizado e se corrigiu alguma issue.
+    Em seguida, testes em ambiente local são realizados, para checar se essa atualização gerou algum bug
+    Se tudo correr bem, uma versão nova para produção é gerada e enviada para o cliente atualizar.
+9. Um Backup é realizado a cada 3 dias, caso haja alguma falha de segurança, o primeiro passo é rastrear essa falha e caso nescessário, restaurar o backup.
